@@ -27,3 +27,10 @@
 /Users/bejtullahgadzimirzoev/codding/pet-projects/ZooAPI/obj/Debug/net9.0/ZooAPI.pdb
 /Users/bejtullahgadzimirzoev/codding/pet-projects/ZooAPI/obj/Debug/net9.0/ZooAPI.genruntimeconfig.cache
 /Users/bejtullahgadzimirzoev/codding/pet-projects/ZooAPI/obj/Debug/net9.0/ref/ZooAPI.dll
+/Users/bejtullahgadzimirzoev/codding/pet-projects/ZooAPI/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Users/bejtullahgadzimirzoev/codding/pet-projects/ZooAPI/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/bejtullahgadzimirzoev/codding/pet-projects/ZooAPI/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/bejtullahgadzimirzoev/codding/pet-projects/ZooAPI/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/bejtullahgadzimirzoev/codding/pet-projects/ZooAPI/obj/Debug/net9.0/ZooAPI.csproj.AssemblyReference.cache
+/Users/bejtullahgadzimirzoev/codding/pet-projects/ZooAPI/obj/Debug/net9.0/ZooAPI.MvcApplicationPartsAssemblyInfo.cs
+/Users/bejtullahgadzimirzoev/codding/pet-projects/ZooAPI/obj/Debug/net9.0/ZooAPI.csproj.Up2Date
