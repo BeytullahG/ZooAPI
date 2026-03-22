@@ -1,44 +1,51 @@
 
 class AnimalService : IAnimalService
 {
-    private List<Animal> animals = new List<Animal>();
+    private readonly ZooDbContext _context;
+    public AnimalService(ZooDbContext context)
+    {
+        _context = context;
+    }
+
     public Animal Create(Animal animal)
     {
-        animal.Id = animals.Count + 1;
-        animals.Add(animal);
+        _context.Animals.Add(animal);
+        _context.SaveChanges();
         return animal;
     }
 
     public bool Delete(int Id)
     {
-        var animal = animals.FirstOrDefault(x => x.Id == Id);
+        var animal = _context.Animals.FirstOrDefault(x => x.Id == Id);
         if (animal == null) return false;
         else
         {
-            animals.Remove(animal);
+            _context.Animals.Remove(animal);
         }
+        _context.SaveChanges();
         return true;
     }
 
     public bool Feed(int Id, int food)
     {
-        var animal = animals.FirstOrDefault(x => x.Id == Id);
+        var animal = _context.Animals.FirstOrDefault(x => x.Id == Id);
         if (animal == null) return false;
         else if(animal.Energy + food <= 100)
         {
             animal.Energy += food;
         }
         else animal.Energy = 100;
+        _context.SaveChanges();
         return true;
     }
 
     public List<Animal> GetAll()
     {
-        return animals;
+        return _context.Animals.ToList();
     }
 
     public Animal? GetById(int Id)
     {
-        return animals.FirstOrDefault(x => x.Id == Id);
+        return _context.Animals.FirstOrDefault(x => x.Id == Id);
     }
 }
